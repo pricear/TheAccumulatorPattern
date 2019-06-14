@@ -199,15 +199,15 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
     ####################################################################
     # ------------------------------------------------------------------
-    x=
-    for k in range(n):  # Loop that does NOT use its index variable
+    radius =
+    for k in range(m):  #
+        circle = rg.Circle()
+        circle.fill_color = 'green'
 
-        corner1 = rg.Point(x, y)
-        corner2 = rg.Point(x,y)
-        rectangle = rg.Rectangle(corner1,corner2)
+    for k in range (n):
+        circle2 = rg.Circle(rg.Point(350, 70), 50)
+        circle2.outline_color =
 
-        # Attach the object(s) to the window.
-        rectangle.attach_to(window)
 
     window.render()
 
