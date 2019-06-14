@@ -9,8 +9,8 @@ Additionally, it emphasizes that you must
 before you can implement a solution to the problem in Python. 
   
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Alexis Price.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -134,7 +134,17 @@ def run_test_draw_circles_from_rectangle():
     #   Follow the same form as the example in a previous problem.
     ####################################################################
     # ------------------------------------------------------------------
+    window = rg.RoseWindow(650, 350)
 
+    # Test 1:
+    rectangle = rg.rectangle(rg.Point(50,75), rg.Point(100,25))
+    rectangle.fill_color = 'green'
+    draw_circles_from_rectangle(7, rectangle, window)
+
+    # Test 2:
+    circle = rg.Circle(rg.Point(350, 70), 50)
+    draw_squares_from_circle(4, circle, window)
+    window.close_on_mouse_click()
 
 def draw_circles_from_rectangle(m, n, rectangle, window):
     """
@@ -189,7 +199,17 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
     ####################################################################
     # ------------------------------------------------------------------
+    x=
+    for k in range(n):  # Loop that does NOT use its index variable
 
+        corner1 = rg.Point(x, y)
+        corner2 = rg.Point(x,y)
+        rectangle = rg.Rectangle(corner1,corner2)
+
+        # Attach the object(s) to the window.
+        rectangle.attach_to(window)
+
+    window.render()
 
 def run_test_draw_lines_from_rectangles():
     """ Tests the   draw_lines_from_rectangles  function. """
